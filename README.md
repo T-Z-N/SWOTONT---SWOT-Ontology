@@ -1,0 +1,1 @@
+# SWOT-SOFT-Ontology
