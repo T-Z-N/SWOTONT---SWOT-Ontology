@@ -68,6 +68,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#annotate">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#annotatedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Manager"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessSituation"/>
     </owl:ObjectProperty>
     
 
@@ -84,6 +86,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#compensate">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
     </owl:ObjectProperty>
     
 
@@ -92,6 +96,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#counter">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
     </owl:ObjectProperty>
     
 
@@ -100,6 +106,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#enhance">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
     </owl:ObjectProperty>
     
 
@@ -108,6 +116,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#goalOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasGoal"/>
     </owl:ObjectProperty>
     
 
@@ -116,6 +125,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasFactor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessFactor"/>
     </owl:ObjectProperty>
     
 
@@ -124,6 +135,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasGoal">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Stakeholder"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal"/>
     </owl:ObjectProperty>
     
 
@@ -132,6 +145,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasImpact">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessSituation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessFactor"/>
     </owl:ObjectProperty>
     
 
@@ -140,6 +155,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasQuality">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Quality"/>
     </owl:ObjectProperty>
     
 
@@ -148,6 +165,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasSituation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessSituation"/>
     </owl:ObjectProperty>
     
 
@@ -156,6 +175,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#leverage">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
     </owl:ObjectProperty>
     
 
@@ -164,6 +185,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#limit">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
     </owl:ObjectProperty>
     
 
@@ -172,6 +195,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#mitigate">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
     </owl:ObjectProperty>
     
 
@@ -180,7 +205,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#worsen">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
     </owl:ObjectProperty>
     
 
@@ -238,10 +264,27 @@
     
 
 
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Bank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Bank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Stakeholder"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BrandNameProductionFactor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BrandNameProductionFactor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#OperationFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Business -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Business">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Company"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Stakeholder"/>
     </owl:Class>
     
 
@@ -306,6 +349,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CapitalStructureFactor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FinanceFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Stakeholder"/>
+        <rdfs:comment>Same as Business</rdfs:comment>
     </owl:Class>
     
 
@@ -454,8 +506,8 @@
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Consumer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Consumer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Stakeholder"/>
-        <rdfs:comment>Also known as Consumer (Weihrich 1993)</rdfs:comment>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EndCustomer"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Customer"/>
     </owl:Class>
     
 
@@ -464,6 +516,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#ConsumerGoal">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Customer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Stakeholder"/>
     </owl:Class>
     
 
@@ -488,6 +548,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#DemographicFactor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#DirectCustomer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#DirectCustomer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Customer"/>
     </owl:Class>
     
 
@@ -580,6 +648,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EndCustomer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EndCustomer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Customer"/>
+        <rdfs:comment>Also known as Consumer (Weihrich 1993)</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EnvironmentalFactor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EnvironmentalFactor">
@@ -588,11 +665,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Environmentalist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Environmentalist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Stakeholder"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#ExecutiveManager -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#ExecutiveManager">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Manager"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#ManagerGoal"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StrategicManager"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StrategicManagerGoal"/>
         <rdfs:comment>Also mentioned as TopManager</rdfs:comment>
@@ -812,6 +896,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#IntellectualPropertyFactor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#InnovationFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Intermediarie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Intermediarie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Customer"/>
     </owl:Class>
     
 
