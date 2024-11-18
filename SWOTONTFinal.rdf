@@ -379,7 +379,7 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessSituation"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasQuality"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -564,6 +564,52 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EconomicalFactor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemOpportunity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemOpportunity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemSituation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasQuality"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemSituation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemSituation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemThreat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemSituation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasQuality"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTAttribute"/>
     </owl:Class>
     
 
@@ -826,6 +872,22 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyWeakness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureEcosystemOpportunity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureEcosystemOpportunity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemOpportunity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureEcosystemThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureEcosystemThreat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemThreat"/>
     </owl:Class>
     
 
@@ -1178,6 +1240,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastEcosystemOpportunity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastEcosystemOpportunity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemOpportunity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastEcosystemThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastEcosystemThreat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemThreat"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PatentFactor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PatentFactor">
@@ -1266,6 +1344,22 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyWeakness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentEcosystemOpportunity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentEcosystemOpportunity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemOpportunity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentEcosystemThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentEcosystemThreat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemThreat"/>
     </owl:Class>
     
 
