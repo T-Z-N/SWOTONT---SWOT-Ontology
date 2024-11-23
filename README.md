@@ -1,14 +1,14 @@
 # Semantic Modeling of SWOT Analysis
 
-This repository contains the ontology and related resources for the paper "Granular and Relational SWOT Analysis: An Ontological Approach" presented at the 6th International Conference on Industry 4.0 and Smart Manufacturing.
+This repository contains the ontology and related resources for the paper "Granular and Relational SWOT Analysis: An Ontological Approach," presented at the 6th International Conference on Industry 4.0 and Smart Manufacturing.
 
 ## Overview
 
-The traditional Strength, Weakness, Opportunity, and Threat (SWOT) analysis, despite its popularity, faces a significant challange
+The traditional Strength, Weakness, Opportunity, and Threat (SWOT) analysis, despite its popularity, faces a significant challenge
 in interpreting information through the ”SWOT Matrix (SM)”. The conventional matrix inherently fails to capture the
-complexity and detailed charecteristics neccesary for comprehensive decision-making. Therefore this paper introduces an innovative
+complexity and detailed characteristics necessary for comprehensive decision-making. Therefore, this paper introduces an innovative
 approach to address these limitations by an ontology SWOTONT representing the domain of SWOT analysis. SWOTONT
-is developed through a literature review and a bottom-up ontology development approach providing context to the SWOT attributes
+is developed through a literature review and a bottom-up ontology development approach, providing context to the SWOT attributes
 by introducing finer subcategories and mapping their interrelationships. By developing a structured semantic approach,
 authors aimed to enable more precise knowledge extraction and support advanced strategic analysis. Future work will focus on
 empirical validation through case studies and domain expert feedback, integrating an upper ontology and exploring additional
@@ -66,6 +66,8 @@ This project is licensed under the CC BY-NC-ND license. See the [LICENSE](LICENS
 For any questions or inquiries, please contact the corresponding author:
 - **Alican Tüzün** - [Alican.Tuezuen@fh-steyr.at](mailto:Alican.Tuezuen@fh-steyr.at)
 
+# Version 0.0 01.09.2024
 
-# Version 0.0
+Classes are added based on the narrative review (Paper Accepted, Publication Soon)
+First, natural language definitions were integrated.
 
