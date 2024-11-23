@@ -68,6 +68,6 @@ For any questions or inquiries, please contact the corresponding author:
 
 # Version 0.0 01.09.2024
 
-Classes are added based on the narrative review (Paper Accepted, Publication Soon)
-First, natural language definitions were integrated.
+- Classes are added based on the narrative review (Paper Accepted, Publication Soon)
+- First, natural language definitions were integrated.
 
