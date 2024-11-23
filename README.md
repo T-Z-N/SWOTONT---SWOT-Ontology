@@ -65,3 +65,7 @@ This project is licensed under the CC BY-NC-ND license. See the [LICENSE](LICENS
 
 For any questions or inquiries, please contact the corresponding author:
 - **Alican Tüzün** - [Alican.Tuezuen@fh-steyr.at](mailto:Alican.Tuezuen@fh-steyr.at)
+
+
+# Version 0.0
+
