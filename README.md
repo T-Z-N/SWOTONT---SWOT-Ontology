@@ -26,8 +26,6 @@ applications of the model.
 
 - Java (for running Protege)
 - [Protege](https://protege.stanford.edu/) (Ontology editor and knowledge management software)
-- [OWL Viz Plugin](https://protegewiki.stanford.edu/wiki/OWLViz) (for ontology visualization)
-- [OntoGraf Plugin](https://protegewiki.stanford.edu/wiki/OntoGraf) (for knowledge graph visualization)
 
 ### Installation
 
@@ -65,10 +63,3 @@ This project is licensed under the CC BY-NC-ND license. See the [LICENSE](LICENS
 
 For any questions or inquiries, please contact the corresponding author:
 - **Alican Tüzün** - [Alican.Tuezuen@fh-steyr.at](mailto:Alican.Tuezuen@fh-steyr.at)
-- 
-
-# Version 0.0 01.09.2024
-
-- Classes are added based on the narrative review (Paper Accepted, Publication Soon)
-- First, natural language definitions were integrated.
-
