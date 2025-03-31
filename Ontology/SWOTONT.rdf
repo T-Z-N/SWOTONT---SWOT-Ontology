@@ -63,59 +63,26 @@
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#annotate -->
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Influence -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#annotate">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#annotatedBy"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanySituation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#annotatedBy -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#annotatedBy">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Influence">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#compensate -->
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#NegativelyInfluence -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#compensate">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#NegativelyInfluence">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Influence"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#counter -->
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PositivelyInfluence -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#counter">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#enhance -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#enhance">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#goalOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#goalOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasGoal"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PositivelyInfluence">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Influence"/>
     </owl:ObjectProperty>
     
 
@@ -124,7 +91,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasFactor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyFactor"/>
     </owl:ObjectProperty>
     
 
@@ -133,18 +99,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasGoal">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Stakeholder"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasImpact -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasImpact">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanySituation"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyFactor"/>
     </owl:ObjectProperty>
     
 
@@ -153,57 +107,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasQuality">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Quality"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasSituation -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasSituation">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanySituation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#leverage -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#leverage">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#limit -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#limit">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#mitigate -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#mitigate">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#worsen -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#worsen">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
     </owl:ObjectProperty>
     
 
@@ -222,7 +125,6 @@
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanySituation"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#TimePeriod"/>
     </owl:DatatypeProperty>
     
@@ -236,52 +138,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemOpportunity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemOpportunity">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemSituation"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasQuality"/>
-                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemSituation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemSituation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Situation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemThreat -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemThreat">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemSituation"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasQuality"/>
-                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-    </owl:Class>
     
 
 
@@ -309,140 +165,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyOpportunity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyOpportunity">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanySituation"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasQuality"/>
-                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyOwnerGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyOwnerGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyResource -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyResource">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyFactor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanySituation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanySituation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Situation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasQuality"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Weakness"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#TimePeriod"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyStrength -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyStrength">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanySituation"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasQuality"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-        <rdfs:comment>A company strength is an inherent attribute  that provides a competitive advantage to the company.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyThreat -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyThreat">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanySituation"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasQuality"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyWeakness -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyWeakness">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanySituation"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasQuality"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Weakness"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompetitorGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompetitorGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#ConsumerGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#ConsumerGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal"/>
     </owl:Class>
     
 
@@ -487,375 +213,23 @@
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EmployeeGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EmployeeGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Factor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Factor"/>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FederalGovermentGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FederalGovermentGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#GovermentGoal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FinancialInstitutionGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FinancialInstitutionGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#InstitutionGoal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureCompanyOpportunity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureCompanyOpportunity">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyOpportunity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
-                        <owl:hasValue>Future</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyOpportunity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureCompanyStrength -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureCompanyStrength">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyStrength"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
-                        <owl:hasValue>Future</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyStrength"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureCompanyThreat -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureCompanyThreat">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyThreat"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
-                        <owl:hasValue>Future</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyThreat"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureCompanyWeakness -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureCompanyWeakness">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyWeakness"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
-                        <owl:hasValue>Future</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyWeakness"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureEcosystemOpportunity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureEcosystemOpportunity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemOpportunity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureEcosystemThreat -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureEcosystemThreat">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemThreat"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Goal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Goal"/>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#GovermentGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#GovermentGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#InstitutionGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#InstitutionGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#LaborUnionGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#LaborUnionGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#UnionGoal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#LocalGovermentGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#LocalGovermentGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#GovermentGoal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#ManagerGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#ManagerGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTFactor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastCompanyOpportunity -->
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTFactor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastCompanyOpportunity">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyOpportunity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
-                        <owl:hasValue>Past</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyOpportunity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastCompanyStrength -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastCompanyStrength">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyStrength"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
-                        <owl:hasValue>Past</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyStrength"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastCompanyThreat -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastCompanyThreat">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyThreat"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
-                        <owl:hasValue>Past</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyThreat"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastCompanyWeakness -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastCompanyWeakness">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyWeakness"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
-                        <owl:hasValue>Past</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyWeakness"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastEcosystemOpportunity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastEcosystemOpportunity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemOpportunity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastEcosystemThreat -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastEcosystemThreat">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemThreat"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentCompanyOpportunity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentCompanyOpportunity">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyOpportunity"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
-                        <owl:hasValue>Present</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyOpportunity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentCompanyStrength -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentCompanyStrength">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyStrength"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
-                        <owl:hasValue>Present</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyStrength"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentCompanyThreat -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentCompanyThreat">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyThreat"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
-                        <owl:hasValue>Present</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyThreat"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentCompanyWeakness -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentCompanyWeakness">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyWeakness"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
-                        <owl:hasValue>Present</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyWeakness"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentEcosystemOpportunity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentEcosystemOpportunity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemOpportunity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentEcosystemThreat -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentEcosystemThreat">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#BusinessEcosystemThreat"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Quality -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Quality"/>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOT">
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTFactor">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -865,50 +239,12 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Factor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Situation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Situation"/>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Stakeholder -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Stakeholder"/>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Goal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StateGovermentGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StateGovermentGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#GovermentGoal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StockholderGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StockholderGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StrategicManagerGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StrategicManagerGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#ManagerGoal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Influence"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTFactor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -916,15 +252,7 @@
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Quality"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SupplierGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SupplierGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTFactor"/>
     </owl:Class>
     
 
@@ -932,15 +260,7 @@
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Quality"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#UnionGoal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#UnionGoal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StakeholderGoal"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTFactor"/>
     </owl:Class>
     
 
@@ -948,7 +268,7 @@
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Weakness -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Weakness">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Quality"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTFactor"/>
     </owl:Class>
     
 
@@ -967,119 +287,8 @@
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#LowProductivity -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#LowProductivity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanySituation"/>
-        <SWOTOntology:hasQuality rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength"/>
-        <SWOTOntology:hasTime>Present</SWOTOntology:hasTime>
+        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyCapability"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity">
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StephanPepper -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StephanPepper"/>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength"/>
-    
-
-
-    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat">
-        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyOpportunity"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyStrength"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyThreat"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyWeakness"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyOwnerGoal"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompetitorGoal"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#ConsumerGoal"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EmployeeGoal"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#ManagerGoal"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StockholderGoal"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SupplierGoal"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FederalGovermentGoal"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#LocalGovermentGoal"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#StateGovermentGoal"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureCompanyOpportunity"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastCompanyOpportunity"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentCompanyOpportunity"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureCompanyStrength"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastCompanyStrength"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentCompanyStrength"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureCompanyThreat"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastCompanyThreat"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentCompanyThreat"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureCompanyWeakness"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastCompanyWeakness"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PresentCompanyWeakness"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Weakness"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 
