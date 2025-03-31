@@ -1,4 +1,5 @@
 # **Semantic Modeling of SWOT Analysis**
+# **Semantic Modeling of SWOT Analysis**
 
 This repository contains the ontology and related resources for the paper:
 
@@ -7,7 +8,13 @@ Presented at the *6th International Conference on Industry 4.0 and Smart Manufac
 [DOI: 10.1016/j.procs.2025.01.317](https://doi.org/10.1016/j.procs.2025.01.317)  
 
 ## **Overview**
+## **Overview**
 
+Traditional Strength, Weakness, Opportunity, and Threat (SWOT) analysis, despite its widespread use, faces a critical limitation in effectively interpreting information through the *SWOT Matrix (SM)*. The conventional matrix lacks the granularity and relational depth necessary for comprehensive decision-making.
+
+To address these shortcomings, this paper introduces **SWOTONT**, an ontology designed to semantically model SWOT analysis. SWOTONT is developed using a bottom-up ontology development approach, incorporating insights from a literature review and domain experts. The ontology enhances SWOT analysis by introducing finer subcategories, defining interrelationships among factors, and structuring the information for improved knowledge extraction.
+
+By leveraging **OWL2**, SWOTONT provides a structured, semantic foundation for strategic decision-making. Future research will focus on empirical validation through case studies, integrating an upper ontology, and exploring further applications of the model.
 Traditional Strength, Weakness, Opportunity, and Threat (SWOT) analysis, despite its widespread use, faces a critical limitation in effectively interpreting information through the *SWOT Matrix (SM)*. The conventional matrix lacks the granularity and relational depth necessary for comprehensive decision-making.
 
 To address these shortcomings, this paper introduces **SWOTONT**, an ontology designed to semantically model SWOT analysis. SWOTONT is developed using a bottom-up ontology development approach, incorporating insights from a literature review and domain experts. The ontology enhances SWOT analysis by introducing finer subcategories, defining interrelationships among factors, and structuring the information for improved knowledge extraction.
@@ -18,20 +25,33 @@ By leveraging **OWL2**, SWOTONT provides a structured, semantic foundation for s
 - **Ontology-driven SWOT Analysis:** Developed using the **Bottom-Up Ontology Development Approach** and **OWL2**.
 - **Granular SWOT Categorization:** Enhanced classification of SWOT factors with subcategories and detailed attributes.
 - **Relational Context:** Captures influence patterns between SWOT elements for better strategic analysis.
+## **Key Features**
+- **Ontology-driven SWOT Analysis:** Developed using the **Bottom-Up Ontology Development Approach** and **OWL2**.
+- **Granular SWOT Categorization:** Enhanced classification of SWOT factors with subcategories and detailed attributes.
+- **Relational Context:** Captures influence patterns between SWOT elements for better strategic analysis.
 
 ## **Repository Contents**
 - `ontology/` – Contains the **OWL** files for SWOTONT.
+## **Repository Contents**
+- `ontology/` – Contains the **OWL** files for SWOTONT.
 
+## **Getting Started**
 ## **Getting Started**
 
 ### **Prerequisites**
 - **Java** (for running Protégé)
 - [**Protégé**](https://protege.stanford.edu/) (Ontology editor and knowledge management tool)
+### **Prerequisites**
+- **Java** (for running Protégé)
+- [**Protégé**](https://protege.stanford.edu/) (Ontology editor and knowledge management tool)
 
+### **Installation**
 ### **Installation**
 
 1. **Clone the repository:**
     ```bash
+    git clone https://github.com/yourusername/SWOTONT.git
+    cd SWOTONT
     git clone https://github.com/yourusername/SWOTONT.git
     cd SWOTONT
     ```
@@ -39,15 +59,23 @@ By leveraging **OWL2**, SWOTONT provides a structured, semantic foundation for s
 2. **Set up Protégé:**
     - Download and install Protégé from the official website.
     - Install **Cellfie, OWL Viz,** and **OntoGraf** plugins via Protégé’s plugin manager.
+2. **Set up Protégé:**
+    - Download and install Protégé from the official website.
+    - Install **Cellfie, OWL Viz,** and **OntoGraf** plugins via Protégé’s plugin manager.
 
+### **Usage**
 ### **Usage**
 
 **Load the Ontology:**
 - Open Protégé.
 - Load the **OWL** file from the `ontology/` directory.
+- Open Protégé.
+- Load the **OWL** file from the `ontology/` directory.
 
 ## **Contributing**
+## **Contributing**
 
+Contributions are welcome! If you’d like to contribute:
 Contributions are welcome! If you’d like to contribute:
 
 1. Fork the repository.
@@ -55,12 +83,19 @@ Contributions are welcome! If you’d like to contribute:
 3. Make your changes and commit them (`git commit -am 'Add new feature'`).
 4. Push to your branch (`git push origin feature-branch`).
 5. Open a **Pull Request**.
+4. Push to your branch (`git push origin feature-branch`).
+5. Open a **Pull Request**.
 
+## **License**
 ## **License**
 
 This project is licensed under the **CC BY-NC-ND** license. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the **CC BY-NC-ND** license. See the [LICENSE](LICENSE) file for details.
 
 ## **Contact**
+## **Contact**
 
+For inquiries, please contact:  
+📧 **Alican Tüzün** – [Alican.Tuezuen@fh-steyr.at](mailto:Alican.Tuezuen@fh-steyr.at)
 For inquiries, please contact:  
 📧 **Alican Tüzün** – [Alican.Tuezuen@fh-steyr.at](mailto:Alican.Tuezuen@fh-steyr.at)
