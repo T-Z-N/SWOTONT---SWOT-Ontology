@@ -1,4 +1,4 @@
-# **Semantic Modeling of SWOT Analysis**
+# **SWOT Ontology (SWOTONT)**
 
 This repository contains the ontology and related resources for the paper:
 
