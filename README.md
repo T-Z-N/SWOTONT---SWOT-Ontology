@@ -16,6 +16,14 @@ applications of the model.
 
 - An ontology developed using the Bottom-Up Ontology Development Approach and OWL2.
 
+
+# Version 0.0 01.09.2024
+
+- Classes are added based on the narrative review (Paper Accepted, Publication Soon)
+- First, natural language definitions were integrated.
+
+
+
 ## Repository Contents
 
 - `ontology/`: Contains the OWL files for the SOFT/SWOT ontology.
@@ -26,8 +34,6 @@ applications of the model.
 
 - Java (for running Protege)
 - [Protege](https://protege.stanford.edu/) (Ontology editor and knowledge management software)
-- [OWL Viz Plugin](https://protegewiki.stanford.edu/wiki/OWLViz) (for ontology visualization)
-- [OntoGraf Plugin](https://protegewiki.stanford.edu/wiki/OntoGraf) (for knowledge graph visualization)
 
 ### Installation
 
@@ -39,7 +45,6 @@ applications of the model.
 
 2. **Set up Protege:**
     - Download and install Protege from the official website.
-    - Install the Cellfie, OWL Viz, and OntoGraf plugins via Protege's plugin manager.
 
 ### Usage
 

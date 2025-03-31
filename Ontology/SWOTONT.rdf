@@ -67,6 +67,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Influence">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#influencedBy"/>
     </owl:ObjectProperty>
     
 
@@ -75,6 +76,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#NegativelyInfluence">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Influence"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#negativelyInfluencedBy"/>
     </owl:ObjectProperty>
     
 
@@ -83,6 +85,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PositivelyInfluence">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Influence"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#positivelyInfluencedBy"/>
     </owl:ObjectProperty>
     
 
@@ -107,6 +110,30 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasQuality">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#influencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#negativelyInfluencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#negativelyInfluencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#influencedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#positivelyInfluencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#positivelyInfluencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#influencedBy"/>
     </owl:ObjectProperty>
     
 
@@ -173,6 +200,122 @@
     
 
 
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CurrentOpportunity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CurrentOpportunity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
+                        <owl:allValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Present</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CurrentStrength -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CurrentStrength">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Present</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CurrentThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CurrentThreat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Present</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CurrentWeakness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CurrentWeakness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Weakness"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Present</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Weakness"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemCondition -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#EcosystemCondition">
@@ -219,10 +362,242 @@
     
 
 
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureOpportunity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureOpportunity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Future</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureStrength -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureStrength">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Future</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureThreat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Future</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureWeakness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#FutureWeakness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Weakness"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Future</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Weakness"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#SWOTFactor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastOpportunity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastOpportunity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Past</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Opportunity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastStrength -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastStrength">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Past</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Strength"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastThreat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastThreat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Past</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Threat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastWeakness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#PastWeakness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Weakness"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#hasTime"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:oneOf>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Past</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </owl:oneOf>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Weakness"/>
     </owl:Class>
     
 
@@ -288,6 +663,18 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#LowProductivity">
         <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyCapability"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Weakness"/>
+        <SWOTOntology:hasTime>Future</SWOTOntology:hasTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#UneducatedEmployees -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#UneducatedEmployees">
+        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#CompanyResource"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#Weakness"/>
+        <SWOTOntology:NegativelyInfluence rdf:resource="http://www.semanticweb.org/p42770/ontologies/2024/5/SWOTOntology#LowProductivity"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
